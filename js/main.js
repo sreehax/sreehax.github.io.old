@@ -1,5 +1,5 @@
-//const url = "http://localhost:5000";
-const url = "https://proboscis.herokuapp.com";
+const url = "http://localhost:5000";
+//const url = "https://proboscis.herokuapp.com";
 M.AutoInit();
 function login() {
 	username = document.getElementById("username").value;
