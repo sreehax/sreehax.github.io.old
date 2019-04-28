@@ -52,9 +52,11 @@ if(window.location.pathname.startsWith("/app")) {
 	if(permission == 1) { //Doctor
 		document.getElementById("doctor-portal").style.display = "block";
 		document.getElementById("lab-portal").style.display = "none";
+		document.getElementById("page-title").innerHTML = "Doctor Portal";
 	} else if(permission == 0) { //Lab
 		document.getElementById("doctor-portal").style.display = "none";
 		document.getElementById("lab-portal").style.display = "block";
+		document.getElementById("page-title").innerHTML = "Lab Portal";
 	} else {
 		window.location.replace("/")
 	}

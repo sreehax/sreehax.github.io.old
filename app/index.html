@@ -10,7 +10,7 @@
 <body>
 <nav class="nav-extended red">
 	<div class="nav-wrapper">
-		<a href="#" class="brand-logo left">Proboscis</a>
+		<a href="#" id="page-title" class="brand-logo left">Proboscis</a>
 	</div>
 	<div class="nav-content">
 		<ul class="tabs tabs-transparent">
@@ -25,6 +25,7 @@ doctor portal
 </container>
 <container id="lab-portal">
 <h2>Lab Portal</h2>
+<br>
 <fieldset>
 <div class="row" style="width: 80%;">
 	<div class="input-field col s12">
@@ -32,7 +33,11 @@ doctor portal
 		<label for="name">Patient Name</label>
 	</div>
 </div>
-<div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverEvent(event);"><br><br><h5>Drag and drop your image here</h5><br><br></div>
+<input name='files' id="fileInput" type="file" style="visibility:hidden" />
+<div id="drop_zone" onclick="document.getElementById('fileInput').click()" ondrop="dropHandler(event);" ondragover="dragOverEvent(event);"><br><br><h5>Drag and drop your image here</h5><br>
+	<br></div><br>
+<div style="display: flex; justify-content: center;">
+	<button  onclick='login()' class='center col s12 btn btn-large waves-effect indigo'>Submit</button></div>
 </fieldset>
 </container>
 </div>
